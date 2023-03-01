@@ -1,0 +1,13 @@
+.btn {
+	background-color: rgb(8, 209, 84);
+	color: #fff;
+	display: inline-block;
+	border-radius: 30px;
+	padding: 10px 20px;
+	text-decoration: none;
+	transition: ease .5s all;
+}
+
+.btn:hover {
+	background-color: rgb(8, 180, 84);
+}
