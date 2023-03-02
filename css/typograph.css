@@ -1,0 +1,17 @@
+h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+}
+ /* Linha embaixo dos títulos h2 */
+h2:after {
+	content: '';
+	display: block;
+	background-color: rgb(130, 130, 130);
+	margin: 10px auto 0 auto;
+	width: 50px;
+	height: 2px;
+}
+
+.subtitle {
+	margin-bottom: 80px;
+}

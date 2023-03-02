@@ -1,9 +1,12 @@
 @import url('reset.css');
 @import url('grid.css');
 @import url('buttons.css');
+@import url('typograph.css');
+@import url('icons.css');
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	color: rgb(130, 130, 130,);
 }
 
 #header .btn {
@@ -42,7 +45,6 @@ body {
 
 #header a {
 	color: #ffffff;
-	
 }
 
 #header nav {
@@ -62,3 +64,37 @@ body {
 	top: 50%;
 	transform: translate(0,-50%);
 }
+
+#how-it-work, #costumers {
+	text-align: center;
+	padding: 30px 0px 30px 0px;
+}
+
+#costumers {
+	background-color: rgb(242, 242, 242);
+}
+
+#costumers .btn {
+	margin-top: 10px;
+	background-color: rgb(220, 220, 220);
+	color: rgb(130, 130, 130);
+}
+
+#costumers .btn:hover {
+	background-color: rgb(8, 180, 84);
+	color: #fff;
+}
+
+#costumers .btn .material-icons {
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+#costumers .container {
+	max-width: 1000;
+}
+
+#costumers .container .row {
+	padding-bottom: 20px;
+}
+
