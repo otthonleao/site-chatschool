@@ -65,7 +65,7 @@ body {
 	transform: translate(0,-50%);
 }
 
-#how-it-work, #costumers {
+#how-it-work, #costumers, #team {
 	text-align: center;
 	padding: 30px 0px 30px 0px;
 }
@@ -98,3 +98,21 @@ body {
 	padding-bottom: 20px;
 }
 
+#team {
+	background-color: rgb(8, 209, 84);
+	color: #fff;
+}
+
+#team h2:after {
+	background-color: #fff;
+}
+
+#team .img-box-round {
+	width: 120px;
+	height: 120px;
+}
+
+footer {
+	background-color: #000;
+	color:white;
+}

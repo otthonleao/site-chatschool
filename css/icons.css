@@ -17,3 +17,20 @@
 	transform: translate(-50%,-50%); /*Centralizar ícone*/
 	cursor: default; /* como é fonte, isso evita do cursor mudar pra fonte quando passar por cima*/
 }
+
+.img-box-round {
+	display: inline-block;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+/* Linha antes dos nomes dos integrantes da equipe */
+.img-box-label:before {
+	content: '';
+	display: block;
+	width: 50%;
+	height: 60px;
+	background: transparent;
+	border-right: 2px solid rgb(32, 123, 32);
+	margin-bottom: 10px;
+}

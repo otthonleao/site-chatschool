@@ -7,7 +7,7 @@ Nesse projeto utilizamos o [Material Icons](https://m3.material.io/styles/icons/
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 Há outros sites para explorar os diversos icones, como:
-[Font Awesome Icon](https://fontawesome.com)
-[Glyphicons](https://glyphicons.com/)
+[Font Awesome Icon](https://fontawesome.com), 
+[Glyphicons](https://glyphicons.com/), 
 [Ionicons](https://ionic.io/ionicons)
 
