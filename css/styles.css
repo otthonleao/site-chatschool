@@ -3,6 +3,7 @@
 @import url('buttons.css');
 @import url('typograph.css');
 @import url('icons.css');
+@import url('menu.css');
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -51,10 +52,8 @@ body {
 	text-align: right;
 }
 
-#header nav ul li {
+#header nav ul, #header nav ul li {
 	display: inline-block;
-	margin: 0;
-	padding: 0;
 }
 
 #header .title {
@@ -65,7 +64,7 @@ body {
 	transform: translate(0,-50%);
 }
 
-#how-it-work, #costumers, #team {
+#how-it-work, #costumers, #team, #footer{
 	text-align: center;
 	padding: 30px 0px 30px 0px;
 }
@@ -112,7 +111,69 @@ body {
 	height: 120px;
 }
 
-footer {
-	background-color: #000;
+#footer {
+	background-color: rgb(51, 51, 51);
 	color:white;
+	text-align: left;
+}
+
+#footer #footer a {
+	color: rgb(204, 204, 204);
+}
+
+#footer h3:after {
+	content: '';
+	display: block;
+	border-bottom: 2px solid rgb(204, 204, 204);
+	width: 30px;
+}
+
+#footer h3, #footer nav li a {
+	text-transform: uppercase;
+	color: rgb(204, 204, 204);
+}
+
+#footer nav li {
+	padding: 3px 0;
+}
+
+#footer nav li a:hover {
+	color: rgb(255, 255, 255);
+}
+
+#footer .social-media {
+	height: 200px;
+	line-height: 200px;
+	text-align: right;
+}
+
+#footer .social-media a {
+	display: inline-block;
+	padding: 0 0 0 10px;
+	opacity: 1;
+}
+
+#footer .social-media a:hover {
+	opacity: .5;
+	transition: ease .3s all;
+}
+
+#footer .social-media img {
+	vertical-align: middle;
+}
+
+#copyright {
+	text-align: center;
+	background-color: rgb(34, 34, 34);
+	padding: 10px;
+	color: rgb(80, 80, 80);
+}
+
+#copyright a {
+	color: rgb(120, 120, 120);
+}
+
+#copyright a:hover {
+	color: rgb(8, 209, 84);
+	transition: ease .5s all;
 }
