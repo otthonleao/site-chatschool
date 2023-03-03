@@ -1,6 +1,7 @@
 h2 {
 	text-transform: uppercase;
 	font-weight: normal;
+	text-align: center;
 }
  /* Linha embaixo dos títulos h2 */
 h2:after {
