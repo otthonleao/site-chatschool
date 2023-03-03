@@ -4,6 +4,7 @@
 @import url('typograph.css');
 @import url('icons.css');
 @import url('menu.css');
+@import url('pages/home.css');
 
 body {
 	font-family: 'Open Sans', sans-serif;
@@ -35,7 +36,7 @@ body {
 }
 
 #header {
-	background: #000 url("../images/background-header.jpg") no-repeat;
+	background: #000 no-repeat;
 	background-size: cover;
 	color: #ffffff;
 	width: 100%;
@@ -64,51 +65,12 @@ body {
 	transform: translate(0,-50%);
 }
 
-#how-it-work, #costumers, #team, #footer{
-	text-align: center;
+.section {
 	padding: 30px 0px 30px 0px;
 }
 
-#costumers {
-	background-color: rgb(242, 242, 242);
-}
-
-#costumers .btn {
-	margin-top: 10px;
-	background-color: rgb(220, 220, 220);
-	color: rgb(130, 130, 130);
-}
-
-#costumers .btn:hover {
-	background-color: rgb(8, 180, 84);
-	color: #fff;
-}
-
-#costumers .btn .material-icons {
-	vertical-align: middle;
-	font-size: 16px;
-}
-
-#costumers .container {
-	max-width: 1000;
-}
-
-#costumers .container .row {
-	padding-bottom: 20px;
-}
-
-#team {
-	background-color: rgb(8, 209, 84);
-	color: #fff;
-}
-
-#team h2:after {
-	background-color: #fff;
-}
-
-#team .img-box-round {
-	width: 120px;
-	height: 120px;
+.section-center {
+	text-align: center;
 }
 
 #footer {

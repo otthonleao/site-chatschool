@@ -1,0 +1,47 @@
+@import url('../styles.css');
+
+#header.page-home {
+	background-image: url("../../images/background-header.jpg") ;
+}
+
+#costumers {
+	background-color: rgb(242, 242, 242);
+}
+
+#costumers .btn {
+	margin-top: 10px;
+	background-color: rgb(220, 220, 220);
+	color: rgb(130, 130, 130);
+}
+
+#costumers .btn:hover {
+	background-color: rgb(8, 180, 84);
+	color: #fff;
+}
+
+#costumers .btn .material-icons {
+	vertical-align: middle;
+	font-size: 16px;
+}
+
+#costumers .container {
+	max-width: 1000;
+}
+
+#costumers .container .row {
+	padding-bottom: 20px;
+}
+
+#team {
+	background-color: rgb(8, 209, 84);
+	color: #fff;
+}
+
+#team h2:after {
+	background-color: #fff;
+}
+
+#team .img-box-round {
+	width: 120px;
+	height: 120px;
+}
