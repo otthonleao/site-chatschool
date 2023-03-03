@@ -1,0 +1,57 @@
+textarea, input	{
+	width: 100%;
+	border: 1px solid #aaa;
+	border-radius: 2px;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+/* Aplicar especificamente no botão */
+input[type="submit"] {
+	width: auto;
+}
+
+textarea {
+	height: 170px;;
+}
+
+/*Adicionando foco quando clicarmos em um campo do formulário*/
+input:focus, textarea:focus {
+	outline: 1px solid #777
+}
+
+/*Adicionando estilisação usando o atributo, nesse caso o 'placeholder'*/
+input::placeholder, textarea::placeholder {
+	color: white;
+}
+/*Nesse caso o place holder só vai aparecer quando clicarmos no form*/
+input:focus::placeholder, textarea:focus::placeholder {
+	color: #aaa;
+}
+
+.input-control	{
+	position: relative;
+}
+
+form.row {
+	margin-top: 40px;
+}
+/*Posiciona absolutamente onde eu disser com base no 'position: relative' do '.input-control'*/
+.input-control label{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	margin-left: 1%;
+}
+
+#mensagem-label {
+	margin-left: 4%;
+}
+
+/*Quando o form tiver em foco, meu label vai pra cima*/
+/* ~ significa o próximo elemento. Por isso no html colocamos o label após o input*/
+.input-control input:focus ~ label, .input-control textarea:focus ~ label {
+	top: -25px;
+	font-size: 12px;
+	transition: ease .5s all;
+}

@@ -41,7 +41,33 @@
 
 
 	<main>
-
+		<section class="section section-center">
+			<h2>Contato</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolor esse <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nihil, doloribus sdopakwe </p>
+			<div class="container">
+				<form class="row">
+					<div class="col col-desktop-6">
+						<div class="input-control">
+							<input id="nome" name="nome" type="text" placeholder="Nome" required>
+							<label for="nome">Nome</label>
+						</div>
+						<div class="input-control">
+							<input id="email" name="email" type="email" placeholder="username@email.com*" required>
+							<label for="email">E-mail</label>
+						</div>
+						<div class="input-control">
+							<input name="telefone" type="tel" pattern="[0-9]{2}-[0-9]{5}-[0-9]{4}" placeholder="(99)98765-4321" required>
+							<label id="telefone" for="nome">Telefone</label>
+						</div>
+					</div>
+					<div class="col col-desktop-6 input-control">
+						<textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+						<label id="mensagem-label" for="mensagem">Mensagem</label>
+					</div>
+					<input type="submit" value="Salvar" class="btn orange">
+				</form>
+			</div>
+		</section>
 	</main>
 
 
