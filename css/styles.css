@@ -4,8 +4,7 @@
 @import url('typograph.css');
 @import url('icons.css');
 @import url('menu.css');
-@import url('pages/home.css');
-@import url('pages/quem-somos.css');
+
 
 body {
 	font-family: 'Open Sans', sans-serif;
