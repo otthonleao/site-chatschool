@@ -53,7 +53,7 @@
 							<label for="nome">Nome</label>
 						</div>
 						<div class="input-control">
-							<input id="email" name="email" type="email" placeholder="username@email.com*" required>
+							<input id="email" name="email" type="email" placeholder="username@email.com" required>
 							<label for="email">E-mail</label>
 						</div>
 						<div class="input-control">
@@ -62,7 +62,7 @@
 						</div>
 					</div>
 					<div class="col col-desktop-6 input-control col-6">
-						<textarea name="message" id="mensagem" cols="30" rows="10" placeholder="Mensagem"></textarea>
+						<textarea name="message" id="mensagem" cols="30" rows="10" placeholder="Mensagem" required></textarea>
 						<label id="mensagem-label" for="mensagem">Mensagem</label>
 					</div>
 					<input type="submit" value="Enviar" class="btn orange">
@@ -108,5 +108,27 @@
 	<div id="copyright">
 		&copy; Chatschool - 2023  - Todos os direitos reservados - <a href="https://github.com/otthonleao">GithHub</a> - <a href="https://www.linkedin.com/in/otthonleao/">Linkedin</a>
 	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script>
+		let name = document.querySelector("#nome");
+		$('form').submit(function (event) {
+			event.preventDefault();
+			$('form input[type="submit"]').val('Aguarde').attr('disable', true);
+			$('form input[name="_subject"]').val('Contato - Chatboot: ' + name.value);
+			$.ajax({
+				type: $('form').attr('method'),
+				url: $('form').attr('action'),
+				data: $('form').serialize(),
+				success: function () {
+					alert('E-mail enviado com sucesso!\nEm breve entraremos em contato');
+					//Limpar os campos do formulário
+					$('form').trigger('reset');
+					//Renomear o botão para 'enviar' e habilitar o botão novamente após o alert de sucesso
+					$('form input[type="submit"]').val('enviar').attr('disable', false);
+				}
+			})
+		})
+	</script>
 </body>
 </html>
