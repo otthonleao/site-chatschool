@@ -28,3 +28,14 @@
 #valores h2 {
 	margin-top: 20px;
 }
+
+#img-box img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: 991px) {
+	#img-box {
+		text-align: center;
+	}
+}
