@@ -23,3 +23,36 @@
 #team .row:first-child {
 	margin-bottom: 40px;
 }
+
+.team-member {
+	position: relative;
+}
+
+.team-member:hover .description {
+	display: block;
+}
+
+.team-member .description {
+	background-color: rgba(0, 0, 0, 0.85);
+	border: 5px solid rgba(0, 0, 0, 0.3);
+	color: white;
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 99;
+	width: 300px;
+}
+
+.team-member h4 {
+	font-size: 20px;
+}
+
+/*Pegando os itens da coluna 4 e 5 para modificar a direção que o description aparece na tela*/
+.team-member:nth-child(4) .description, .team-member:nth-child(5) .description {
+	left: auto;
+	right: 50%;
+}
+
+
+
