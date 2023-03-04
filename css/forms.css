@@ -20,15 +20,16 @@ input:focus, textarea:focus {
 	outline: 1px solid #777
 }
 
-/*Adicionando estilisação usando o atributo, nesse caso o 'placeholder'*/
-input::placeholder, textarea::placeholder {
-	color: white;
-}
-/*Nesse caso o place holder só vai aparecer quando clicarmos no form*/
-input:focus::placeholder, textarea:focus::placeholder {
-	color: #aaa;
-}
-
+/* Como não funcionou em todos os navegadores usamos a alternativa do opacity
+** Adicionando estilisação usando o atributo, nesse caso o 'placeholder'
+** input::placeholder, textarea::placeholder {
+** 	color: white;
+** }
+** Nesse caso o place holder só vai aparecer quando clicarmos no form
+** input:focus::placeholder, textarea:focus::placeholder {
+** 	color: #aaa;
+** }
+*/
 .input-control	{
 	position: relative;
 }
@@ -42,6 +43,7 @@ form.row {
 	top: 5px;
 	left: 5px;
 	margin-left: 1%;
+	opacity: 0; /*alternativa para fazer a movimentação do label nos formularios*/
 }
 
 #mensagem-label {
@@ -54,4 +56,5 @@ form.row {
 	top: -25px;
 	font-size: 12px;
 	transition: ease .5s all;
+	opacity: 1; /*alternativa para fazer a movimentação do label nos formularios*/
 }
